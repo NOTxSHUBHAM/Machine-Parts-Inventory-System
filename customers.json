@@ -1,0 +1,29 @@
+{
+  "CUST-001": {
+    "customer_id": "CUST-001",
+    "name": "ABC Manufacturing",
+    "phone": "555-0101",
+    "email": "orders@abcmfg.com",
+    "address": "123 Business Park",
+    "total_purchases": 0,
+    "total_spent": 0
+  },
+  "CUST-002": {
+    "customer_id": "CUST-002",
+    "name": "XYZ Industries",
+    "phone": "555-0102",
+    "email": "purchase@xyzind.com",
+    "address": "456 Corporate Dr",
+    "total_purchases": 0,
+    "total_spent": 0
+  },
+  "CUST-003": {
+    "customer_id": "CUST-003",
+    "name": "Tech Solutions",
+    "phone": "555-0103",
+    "email": "procurement@techsol.com",
+    "address": "789 Innovation Way",
+    "total_purchases": 0,
+    "total_spent": 0
+  }
+}

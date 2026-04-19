@@ -1,0 +1,29 @@
+{
+  "SUP-001": {
+    "supplier_id": "SUP-001",
+    "name": "ABC Motors Inc",
+    "contact_person": "John Smith",
+    "phone": "555-0201",
+    "email": "john@abcmotors.com",
+    "address": "123 Industrial Ave",
+    "total_purchases": 0
+  },
+  "SUP-002": {
+    "supplier_id": "SUP-002",
+    "name": "Precision Bearings",
+    "contact_person": "Sarah Johnson",
+    "phone": "555-0202",
+    "email": "sarah@precision.com",
+    "address": "456 Factory Rd",
+    "total_purchases": 0
+  },
+  "SUP-003": {
+    "supplier_id": "SUP-003",
+    "name": "Siemens",
+    "contact_person": "Mike Brown",
+    "phone": "555-0203",
+    "email": "mike@siemens.com",
+    "address": "789 Tech Park",
+    "total_purchases": 0
+  }
+}
