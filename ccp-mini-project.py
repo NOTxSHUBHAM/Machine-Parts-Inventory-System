@@ -1,6 +1,5 @@
 """
-Machine Parts Inventory Manager - Complete Working Version
-Copy this entire code into one file and run it
+Machine Parts Inventory Manager 
 """
 
 import json
