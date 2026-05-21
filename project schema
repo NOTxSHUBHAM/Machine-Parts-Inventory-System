@@ -1,0 +1,177 @@
+📂 Machine Parts Inventory Management System – Project Schema
+machine-parts-inventory/
+│
+├── inventory_manager.py          # Main application file
+│
+├── data/                         # Stores all application data
+│   ├── inventory.json            # Parts inventory database
+│   ├── transactions.json         # Sales & purchase records
+│   ├── users.json                # User login accounts
+│   ├── customers.json            # Customer details
+│   └── suppliers.json            # Supplier details
+│
+├── backup_*/                     # Automatic backup folders
+│
+├── invoice_*.html                # Generated customer invoices
+│
+├── README.md                     # Project documentation
+│
+└── requirements.txt              # Python dependencies
+🧩 System Modules
+Machine Parts Inventory Management System
+│
+├── Authentication Module
+│   ├── Admin Login
+│   ├── User Validation
+│   └── Role Management
+│
+├── Inventory Module
+│   ├── Add Part
+│   ├── Update Part
+│   ├── Delete Part
+│   ├── Search Part
+│   └── Low Stock Alert
+│
+├── Sales Module
+│   ├── Process Sale
+│   ├── Generate Invoice
+│   ├── Customer Selection
+│   └── Stock Reduction
+│
+├── Purchase Module
+│   ├── Add Purchase
+│   ├── Supplier Management
+│   └── Stock Increase
+│
+├── Transaction Module
+│   ├── Sales Records
+│   ├── Purchase Records
+│   └── Transaction History
+│
+├── Report Module
+│   ├── Full Inventory Report
+│   ├── Low Stock Report
+│   ├── Sales Summary
+│   └── Top Selling Parts
+│
+├── Backup & Export Module
+│   ├── Database Backup
+│   ├── CSV Export
+│   └── File Management
+│
+└── Database Module
+    ├── Inventory Data
+    ├── Customer Data
+    ├── Supplier Data
+    └── User Data
+    
+
+
+🗂️ Database Schema
+
+Part Table (Inventory)
+Field	        Type	    Description
+part_id	      String	  Unique Part ID
+name	        String	  Part Name
+category  	  String	  Mechanical/Electrical/etc
+quantity    	Integer	  Available Stock
+selling_price	Float	    Selling Price
+cost_price  	Float    	Purchase Cost
+supplier	    String  	Supplier Name
+location	    String	  Storage Location
+
+Transaction Table
+Field	          Type	    Description
+transaction_id	String  	Unique Transaction ID
+part_id	String	Linked    Part ID
+type	          String	  SALE / PURCHASE
+quantity      	Integer  	Quantity
+price	          Float    	Unit Price
+date	          Date	    Transaction Date
+
+Customer Table
+Field        	Type    	Description
+customer_id	  String	Unique Customer ID
+name	        String	Customer Name
+phone	        String	Contact Number
+address	      String	Customer Address
+
+Supplier Table
+Field	        Type	  Description
+supplier_id	  String	Unique Supplier ID
+name	        String	Supplier Name
+phone        	String	Contact Number
+address	      String	Supplier Address
+
+
+🔐 Default Login Credentials
+Field	      Value
+Username	  admin
+Password	  admin123
+Role	      Administrator
+
+
+⚙️ Working Flow of System
+  Start Application
+          ↓
+  Login Authentication
+          ↓
+  Dashboard Opens
+          ↓
+  Select Module
+ ├── Inventory
+ ├── Sales
+ ├── Purchase
+ ├── Reports
+ └── Backup
+          ↓
+  Perform Operations
+          ↓
+  Update JSON Database
+          ↓
+  Generate Reports / Invoice
+          ↓
+  Logout / Exit
+
+📊 Features of the Project
+User Authentication System
+Inventory Management
+Sales & Purchase Tracking
+Invoice Generation
+Low Stock Alert System
+Automatic Backup Creation
+CSV Data Export
+Report Generation
+JSON-Based Database Storage
+Error Handling & Validation
+
+
+💻 System Requirements
+
+Component			Requirement
+Operating System	Windows / Linux / macOS
+Python Version		Python 3.6+
+RAM					Minimum 256 MB
+Storage				50 MB Free Space
+
+
+🚦 Error Handling
+The system handles:
+Invalid Login Credentials
+Duplicate Part IDs
+Insufficient Stock
+Invalid Numeric Inputs
+Missing Data Files
+File Read/Write Errors
+Incorrect Customer/Supplier Data
+
+
+🧪 Demo Data Included
+6 Sample Parts
+3 Customers
+3 Suppliers
+30 Sample Transactions
+
+
+▶️ Execution Command
+python inventory_manager.py
